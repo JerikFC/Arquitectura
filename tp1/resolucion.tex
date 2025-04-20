@@ -535,5 +535,43 @@ Dado el número \texttt{10}, convertirlo a base 10 suponiendo que el mismo está
 \end{tabular}
 \end{center}
 
+\section*{4) Pasar al sistema decimal los siguientes números:}
+\begin{center}
+110111$_b$\hspace{1cm}3AF$_h$\hspace{1cm}223{,}274$_o$\hspace{1cm}F0F0{,}EA$_h$\hspace{1cm}2$_o$\\
+2$_h$\hspace{1cm}111101{,}101101$_b$\hspace{1cm}101F{,}25$_h$
+\end{center}
+
+Realizarlo por descomposición en el polinomio equivalente.\\\\\\
+
+\textbf{Resolución:} \\
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Interpretado como} & \textbf{Forma de resolución} & \textbf{Resultado en base 10} \\
+		\hline
+		$110111_b$ & $1 \times 2^5 + 1 \times 2^4 + 0 \times 2^3 + 1 \times 2^2 + 1 \times 2^1 + 1 \times 2^0$ & 55 \\
+		\hline
+		$3AF_h$ & $3 \times 16^2 + 10 \times 16^1 + 15 \times 16^0$ & 943 \\
+		\hline
+		$223.274_o$ & $2 \times 8^2 + 2 \times 8^1 + 3 + 2 \times 8^{-1} + 7 \times 8^{-2} + 4 \times 8^{-3}$ & 147.3671875 \\
+		\hline
+		$F0F0.EA_h$ & $61440 + 240 + 0.875 + 0.0390625$ & 61680.9140625 \\
+		\hline
+		$2_o$ & $2$ & 2 \\
+		\hline
+		$2_h$ & $2$ & 2 \\
+		\hline
+		$111101.101101_b$ & $61 + 0.703125$ & 61.703125 \\
+		\hline
+		$101F.25_h$ & $4127 + 0.14453125$ & 4127.14453125 \\
+		\hline
+	\end{tabular}
+	\caption{Conversión de varios números en distintas bases a base decimal}
+\end{table}
+
+
 
 \end{document}
