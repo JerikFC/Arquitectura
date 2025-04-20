@@ -572,6 +572,28 @@ Realizarlo por descomposición en el polinomio equivalente.\\\\\\
 	\caption{Conversión de varios números en distintas bases a base decimal}
 \end{table}
 
+\section*{5) Convertir a base 2 el número decimal 53,1 hasta seis bits fraccionarios y luego el número binario obtenido volverlo a base 10.}
+
+Primero, convertimos el número decimal $53,1$ a binario hasta seis bits fraccionarios. ¿Qué conclusión extrae?\\
+
+\textbf{Resolución:} \\
+
+\begin{itemize}
+    \item Parte entera: $53_{10} = 110101_2$
+    \item Parte fraccionaria: $0,1_{10} \approx 0.000110_2$
+\end{itemize}
+
+Por lo tanto, el número binario obtenido es $110101,000110_2$.
+
+Luego, convertimos este número binario nuevamente a decimal:
+
+\begin{itemize}
+    \item Parte entera: $110101_2 = 53_{10}$
+    \item Parte fraccionaria: $0.000110_2 = 0,1_{10}$
+\end{itemize}
+
+
+\textbf{Conclusión:} Al convertir el número de decimal a binario y luego volver a decimal, el valor se mantiene igual, siempre y cuando utilicemos una cantidad adecuada de bits para representar la parte fraccionaria. En este caso, al limitar la fracción a seis bits, logramos recuperar el mismo número decimal de manera precisa. Esto muestra que las conversiones entre bases son exactas cuando se consideran suficientes bits para representar el número en la nueva base.
 
 
 \end{document}
