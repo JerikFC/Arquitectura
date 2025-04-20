@@ -11,6 +11,13 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage[table]{xcolor}
+\usepackage{pifont}
+\usepackage{amssymb}
+\newcommand{\xmark}{\ding{55}}
+
 
 \title{Resolución del Trabajo Práctico Nº 1\\\large Sistemas de Numeración}
 \date{\date{Abril 2025}} % O reemplazalo con la fecha de entrega exacta
@@ -26,7 +33,39 @@ El enunciado original de este trabajo práctico se encuentra en el archivo \href
 
 A continuación, se desarrollan los ejercicios correspondientes.
 
+\section*{Ejercicio 1: Sistemas numéricos}
 
+% Aquí escribís tu resolución
+Indicar a qué sistemas numéricos (binario, octal, decimal, hexadecimal) pueden pertenecer los siguientes números...
+
+\begin{center}
+    \begin{tabular}{ccccccccc}
+        1011 & 7806 & 9B4 & 85A2 & 1230 & 567 & FFF & ABCDE & 999 \\
+    \end{tabular}
+\end{center}
+
+\textbf{Resolución:} \\
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{cccccc}
+		\toprule
+		\textbf{Número} & \textbf{Binario} & \textbf{Octal} & \textbf{Decimal} & \textbf{Hexadecimal} & \textbf{Siguiente(s)} \\
+		\midrule
+			1011    & \checkmark & \checkmark & \checkmark & \checkmark & Bin: 1100, Oct: 1012, Dec: 1012, Hex: 1012 \\
+			7806    & \xmark     & \xmark     & \checkmark & \checkmark & Dec: 7807, Hex: 7807 \\
+			9B4     & \xmark     & \xmark     & \xmark     & \checkmark & Hex: 9B5 \\
+			85A2    & \xmark     & \xmark     & \xmark     & \checkmark & Hex: 85A3 \\
+			1230    & \xmark     & \checkmark & \checkmark & \checkmark & Oct: 1231, Dec: 1231, Hex: 1231 \\
+			567     & \xmark     & \checkmark & \checkmark & \checkmark & Oct: 570, Dec: 568, Hex: 568 \\
+			FFF     & \xmark     & \xmark     & \xmark     & \checkmark & Hex: 1000 \\
+			ABCDE   & \xmark     & \xmark     & \xmark     & \checkmark & Hex: ABDCF \\
+			999     & \xmark     & \xmark     & \checkmark & \checkmark & Dec: 1000, Hex: 99A \\
+	\bottomrule
+	\end{tabular}
+	\caption{Verificación de representación numérica en diferentes sistemas}
+\end{table}
 
 
 \end{document}
