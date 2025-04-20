@@ -35,7 +35,7 @@ A continuación, se desarrollan los ejercicios correspondientes.
 
 \section*{Ejercicio 1: Sistemas numéricos}
 
-% Aquí escribís tu resolución
+
 Indicar a qué sistemas numéricos (binario, octal, decimal, hexadecimal) pueden pertenecer los siguientes números...
 
 \begin{center}
@@ -100,7 +100,440 @@ Dado el número \texttt{10}, convertirlo a base 10 suponiendo que el mismo está
 	\end{tabular}
 	\caption{Interpretación del número \texttt{10} en diferentes sistemas de numeración}
 \end{table}
+
+\section*{3) Transformar los siguientes números decimales en:}
+
+	\begin{itemize}
+		\item[a)] Números binarios
+		\item[b)] Números octales
+		\item[c)] Números hexadecimales
+	\end{itemize}
+
+	\vspace{0.5cm}
+
+	\noindent
+	384 \hspace{1cm} 1259 \hspace{1cm} 111 \hspace{1cm} 0{,}175 \hspace{1cm} 1024 \hspace{1cm} 16 \hspace{1cm} 37{,}25
+
+	\vspace{0.5cm}
+
+	\noindent
+	Realizarlo por el método de las divisiones.\\\\
+
+
+
+
+\textbf{Resolución:} \\
+
+\subsection*{a) Conversión de números decimales a binario}
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+384 ÷ 2 & 192 & 0 \\
+192 ÷ 2 & 96  & 0 \\
+96 ÷ 2  & 48  & 0 \\
+48 ÷ 2  & 24  & 0 \\
+24 ÷ 2  & 12  & 0 \\
+12 ÷ 2  & 6   & 0 \\
+6 ÷ 2   & 3   & 0 \\
+3 ÷ 2   & 1   & 1 \\
+1 ÷ 2   & 0   & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+1259 ÷ 2 & 629 & 1 \\
+629 ÷ 2  & 314 & 1 \\
+314 ÷ 2  & 157 & 0 \\
+157 ÷ 2  & 78  & 1 \\
+78 ÷ 2   & 39  & 0 \\
+39 ÷ 2   & 19  & 1 \\
+19 ÷ 2   & 9   & 1 \\
+9 ÷ 2    & 4   & 1 \\
+4 ÷ 2    & 2   & 0 \\
+2 ÷ 2    & 1   & 0 \\
+1 ÷ 2    & 0   & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+111 ÷ 2 & 55 & 1 \\
+55 ÷ 2  & 27 & 1 \\
+27 ÷ 2  & 13 & 1 \\
+13 ÷ 2  & 6  & 1 \\
+6 ÷ 2   & 3  & 0 \\
+3 ÷ 2   & 1  & 1 \\
+1 ÷ 2   & 0  & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+1024 ÷ 2 & 512 & 0 \\
+512 ÷ 2  & 256 & 0 \\
+256 ÷ 2  & 128 & 0 \\
+128 ÷ 2  & 64  & 0 \\
+64 ÷ 2   & 32  & 0 \\
+32 ÷ 2   & 16  & 0 \\
+16 ÷ 2   & 8   & 0 \\
+8 ÷ 2    & 4   & 0 \\
+4 ÷ 2    & 2   & 0 \\
+2 ÷ 2    & 1   & 0 \\
+1 ÷ 2    & 0   & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+16 ÷ 2 & 8 & 0 \\
+8 ÷ 2  & 4 & 0 \\
+4 ÷ 2  & 2 & 0 \\
+2 ÷ 2  & 1 & 0 \\
+1 ÷ 2  & 0 & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+37 ÷ 2 & 18 & 1 \\
+18 ÷ 2 & 9  & 0 \\
+9 ÷ 2  & 4  & 1 \\
+4 ÷ 2  & 2  & 0 \\
+2 ÷ 2  & 1  & 0 \\
+1 ÷ 2  & 0  & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Número × 2} & \textbf{Part E.} & \textbf{Nueva F.} \\
+\midrule
+0.175 × 2 = 0.35 & 0 & 0.35 \\
+0.35 × 2 = 0.70 & 0 & 0.70 \\
+0.70 × 2 = 1.40 & 1 & 0.40 \\
+0.40 × 2 = 0.80 & 0 & 0.80 \\
+0.80 × 2 = 1.60 & 1 & 0.60 \\
+0.60 × 2 = 1.20 & 1 & 0.20 \\
+0.20 × 2 = 0.40 & 0 & 0.40 \\
+0.40 × 2 = 0.80 & 0 & 0.80 \\
+
+
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{lll}
+\midrule
+\textbf{Número × 2} & \textbf{Part E.} & \textbf{Nueva F.} \\
+\midrule
+0.25 × 2 = 0.50 & 0 & 0.50 \\
+0.50 × 2 = 1.00 & 1 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+
+
+
+\subsection*{b) Conversión de números decimales a octales}
+
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+384 ÷ 8 & 48 & 0 \\
+48 ÷ 8 & 6 & 0 \\
+6 ÷ 8 & 0 & 6 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+1259 ÷ 8 & 157 & 3 \\
+157 ÷ 8 & 19 & 5 \\
+19 ÷ 8 & 2 & 3 \\
+2 ÷ 8 & 0 & 2 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+111 ÷ 8 & 13 & 7 \\
+13 ÷ 8 & 1 & 5 \\
+1 ÷ 8 & 0 & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+1024 ÷ 8 & 128 & 0 \\
+128 ÷ 8 & 16 & 0 \\
+16 ÷ 8 & 2 & 0 \\
+2 ÷ 8 & 0 & 2 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+16 ÷ 8 & 2 & 0 \\
+2 ÷ 8 & 0 & 2 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+37 ÷ 8 & 4 & 5 \\
+4 ÷ 8 & 0 & 4 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
 	
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Número × 8} & \textbf{Part E.} & \textbf{Nueva F.} \\
+\midrule
+0.175 × 8 = 1.4 & 1 & 0.4 \\
+0.4 × 8 = 3.2 & 3 & 0.2 \\
+0.2 × 8 = 1.6 & 1 & 0.6 \\
+0.6 × 8 = 4.8 & 4 & 0.8 \\
+0.8 × 8 = 6.4 & 6 & 0.4 \\
+0.4 × 8 = 3.2 & 3 & 0.2 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{lll}
+\midrule
+\textbf{Número × 8} & \textbf{Part E.} & \textbf{Nueva F.} \\
+\midrule
+0.25 × 8 = 2.00 & 2 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+
+\subsection*{c) Conversión de números decimales a hexadecimales}
+
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+384 ÷ 16 & 24 & 0 \\
+24 ÷ 16 & 1 & 8 \\
+1 ÷ 16 & 0 & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+1259 ÷ 16 & 78 & B \\
+78 ÷ 16 & 4 & E \\
+4 ÷ 16 & 0 & 4 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+111 ÷ 16 & 6 & F \\
+6 ÷ 16 & 0 & 6 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+1024 ÷ 16 & 64 & 0 \\
+64 ÷ 16 & 4 & 0 \\
+4 ÷ 16 & 0 & 4 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+16 ÷ 16 & 1 & 0 \\
+1 ÷ 16 & 0 & 1 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{División} & \textbf{Coc.} & \textbf{Res.} \\
+\midrule
+37 ÷ 16 & 2 & 5 \\
+2 ÷ 16 & 0 & 2 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+	
+
+\begin{table}[H]
+\centering
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{lll}
+\toprule
+\textbf{Número × 8} & \textbf{Part E.} & \textbf{Nueva F.} \\
+\midrule
+0.175 × 16 = 2.8 & 2 & 0.8 \\
+0.8 × 16 = 12.8 & C & 0.8 \\
+0.8 × 16 = 12.8 & C & 0.8 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\centering
+\begin{tabular}{lll}
+\midrule
+\textbf{Número × 8} & \textbf{Part E.} & \textbf{Nueva F.} \\
+\midrule
+0.25 × 16 = 4.00 & 4 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{minipage}
+\end{table}
+
+
+\subsection*{Resultado final}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Decimal} & \textbf{Binario} & \textbf{Octal} & \textbf{Hexadecimal} \\
+\hline
+384 & 110000000 & 600 & 180 \\
+1259 & 10011101011 & 2353 & 4EB \\
+111 & 1101111 & 157 & 6F \\
+1024 & 10000000000 & 2000 & 400 \\
+16 & 10000 & 20 & 10 \\
+37.25 & 100101.01 & 45.2 & 25.4 \\
+0.175 & \(0.001011\overline{0011}\) & \(0.1\overline{3146}\) & \(0.2\overline{C}\) \\
+\hline
+\end{tabular}
+\end{center}
 
 
 \end{document}
