@@ -16,6 +16,7 @@
 \usepackage[table]{xcolor}
 \usepackage{pifont}
 \usepackage{amssymb}
+\usepackage{makecell}
 \newcommand{\xmark}{\ding{55}}
 
 
@@ -593,7 +594,72 @@ Luego, convertimos este número binario nuevamente a decimal:
 \end{itemize}
 
 
-\textbf{Conclusión:} Al convertir el número de decimal a binario y luego volver a decimal, el valor se mantiene igual, siempre y cuando utilicemos una cantidad adecuada de bits para representar la parte fraccionaria. En este caso, al limitar la fracción a seis bits, logramos recuperar el mismo número decimal de manera precisa. Esto muestra que las conversiones entre bases son exactas cuando se consideran suficientes bits para representar el número en la nueva base.
+\textbf{Conclusión:} Al convertir el número de decimal a binario y luego volver a decimal, el valor se mantiene igual, siempre y cuando utilicemos una cantidad adecuada de bits para representar la parte fraccionaria. En este caso, al limitar la fracción a seis bits, logramos recuperar el mismo número decimal de manera precisa. Esto muestra que las conversiones entre bases son exactas cuando se consideran suficientes bits para representar el número en la nueva base.\\
+
+
+\section*{6) Transformar a octal y a hexadecimal los siguientes números binarios:}
+
+\begin{center}
+1001000{,}0001 \hspace{1.5cm} 10000{,}0101 \hspace{1.5cm} 11111010 \\
+1110100110011111110 \hspace{1.5cm} 10101{,}11101 \hspace{1.5cm} 11001001
+\end{center}
+
+
+\textbf{Resolución:} \\\\
+
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Binario} & \textbf{Agrupación (3 bits)} & \textbf{Conversión (pesos)} & \textbf{Octal} \\
+		\hline
+		1001000,0001 & 001 001 000 , 000 100 & $1\times2^0=1$, $1\times2^0=1$, $1\times2^2=4$ & 110.04 \\
+		\hline
+		10000,0101 & 010 000 , 010 100 & $1\times2^1=2$, $1\times2^2=4$ & 20.24 \\
+		\hline
+		11111010 & 011 111 010 & 3, 7, 2 & 372 \\
+		\hline
+		1110100110011111110 & 001 110 100 110 011 111 110 & 1, 6, 4, 6, 3, 7, 6 & 1646376 \\
+		\hline
+		10101,11101 & 010 101 , 111 010 & 2, 5 , 7, 2 & 25.72 \\
+		\hline
+		11001001 & 011 001 001 & 3, 1, 1 & 311 \\
+		\hline
+	\end{tabular}
+	\caption{Conversión de números binarios a su equivalente en base octal mediante agrupaciones de 3 bits}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Binario} & \textbf{Agrupación (4 bits)} & \textbf{Conversión} & \textbf{Hexadecimal} \\
+		\hline
+		1001000,0001 & 0100 1000 , 0001 & 0100=4, 1000=8, 0001=1 & 48.1 \\
+		\hline
+		10000,0101 & 0001 0000 , 0101 & 0001=1, 0000=0, 0101=5 & 10.5 \\
+		\hline
+		11111010 & 1111 1010 & 1111=15=F, 1010=10=A & FA \\
+		\hline
+		1110100110011111110 & \makecell[l]{0001 1101 0011\\ 0011 1111 1110} & 
+		\makecell[l]{0001=1, 1101=D, 0011=3,\\ 0011=3, 1111=F, 1110=E} & 
+		1D33FE \\
+		\hline
+		10101,11101 & \makecell[l]{0001 0101 ,\\ 1110 1000} & 0001=1, 0101=5, 1110=E, 1000=8 & 15.E8 \\
+		\hline
+		11001001 & 1100 1001 & 1100=12=C, 1001=9 & C9 \\
+		\hline
+	\end{tabular}
+	\caption{Conversión de números binarios a su equivalente hexadecimal mediante agrupaciones de 4 bits}
+\end{table}
+
+
+
+
 
 
 \end{document}
