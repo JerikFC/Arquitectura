@@ -7,7 +7,7 @@ Este repositorio contiene los trabajos prácticos desarrollados para la materia 
 
 | TP | Tema Principal | Unidades Relacionadas | Enlace |
 |----|----------------|------------------------|--------|
-
+TP1 | [Tema del TP1] | [Unidades] | [Ver TP1] https://github.com/JerikFC/Arquitectura/tree/tp1/tp1
 
 > A medida que se agreguen más trabajos, se completará esta tabla.
 ---
