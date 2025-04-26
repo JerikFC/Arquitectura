@@ -176,4 +176,55 @@ A continuación, se desarrollan los ejercicios correspondientes.
   \caption{Tabla de Representación Binaria}
   \end{table}
     
+
+ \section{Resolución de expresar los números signados en distintos convenios con formato 8 bits}
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|}  % Tabla con 5 columnas y líneas verticales
+  \hline
+  \textbf{Núm} & \makecell[c]{Número Positivo\\(En caso se pueda)} & \textbf{SyM} & \textbf{C1} & \textbf{C2 } \\
+  \hline
+  -35 & 00100011 & 10100011 & 11011100 & 11011101 \\\hline
+  122 & 01111010 & 01111010 & 10000101 & 10000110 \\\hline
+  -136 & \multicolumn{4}{|c|}{\makecell[l]{No se puede representar en ningún formato de los 3,\\porque -136 está fuera del rango permitido para el formato 8 bits}} \\  % Fila 4 con contenido corrido
+  \hline
+  -55 & 00110111 & 10110111 & 11001000 & 11001001 \\\hline
+  -128 & No es posible, excede el rango & No es posible & No es posible & 10000000 \\
+  \hline
+  -127 & 01111111 & 11111111 & 10000000 & 10000001 \\\hline
+  128 & No es posible, excede el rango & No es posible & No es posible & 10000000 \\
+  \hline
+  \end{tabular}
+  \caption{Tabla con los distintos convenios}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}
