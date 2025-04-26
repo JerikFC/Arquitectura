@@ -11,6 +11,9 @@
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{makecell}
+
 
 
 \title{Resolución del Trabajo Práctico Nº 2\\\large Representación de Datos (Primera Parte)}
@@ -150,4 +153,27 @@ A continuación, se desarrollan los ejercicios correspondientes.
 \end{array}
 \]
 
+\vspace{2cm}
+
+\section{Resolución de representar números enteros no signados con formato 8 bits}
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|}  % El | crea líneas verticales entre las columnas
+  \hline
+  \textbf{Número Decimal} & \textbf{Representación Binaria (8 bits)} \\
+  \hline  % Línea horizontal después del encabezado
+  247 & 1111\ 0111 \\
+  \hline
+  33  & 0010\ 0001 \\
+  \hline
+  279 & \makecell[l]{No se puede representar en formato de 8 bits\\ sin signo porque excede el límite máximo de Representación\\ de ese formato que va de 0 - 255} \\
+  \hline
+  128 & 1000\ 0000 \\
+  \hline
+  111 & 0110\ 1111 \\
+  \hline  % Línea horizontal al final de la tabla
+  \end{tabular}
+  \caption{Tabla de Representación Binaria}
+  \end{table}
+    
 \end{document}
