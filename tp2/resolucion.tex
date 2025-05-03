@@ -218,7 +218,26 @@ A continuación, se desarrollan los ejercicios correspondientes.
 
 
 
+\section{Resolución de representar con el menor formato posible en C2 como enteros signados}
 
+Para resolver se usará la siguiente fórmula : Max : $2^{n-1} -1$ , Min : $-2^{n-1}$
+
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+  \textbf{Número} & \textbf{Formato} & \textbf{Complemento a 2}\\
+  \hline
+  23 &  Max : $2^{6-1} -1 = 31$ ; Min : $2^{6-1} = -32$ & 010111 \\\hline
+  128 & Max : $2^{9-1} -1 = 255$ ; Min : $2^{9-1} = -256$ & 010000000 \\\hline
+  -256 & Max : $2^{9-1} -1 = 255$ ; Min : $2^{9-1} = -256$ & 100000000  \\\hline
+  -78 & Max : $2^{8-1} -1 = 127$ ; Min : $2^{8-1} = -128$ & 10101000  \\\hline
+  265 & Max : $2^{10-1} -1 = 511$ ; Min : $2^{10-1} = -512$ & 10111110111 \\\hline
+  -210 & Max : $2^{9-1} -1 = 255$ ; Min : $2^{9-1} = -256$ & 100100100 \\\hline
+  \end{tabular}
+  \caption{Tabla con el menor formato posible}
+\end{table}
 
 
 
