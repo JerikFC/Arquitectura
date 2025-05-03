@@ -13,6 +13,8 @@
 \usepackage{hyperref}
 \usepackage{amssymb}
 \usepackage{makecell}
+\usepackage{multirow}
+
 
 
 
@@ -239,14 +241,39 @@ Para resolver se usará la siguiente fórmula : Max : $2^{n-1} -1$ , Min : $-2^{
   \caption{Tabla con el menor formato posible}
 \end{table}
 
+\vspace{5cm}
+\section{Resolución de representar los Hexadecimales a Decimales según el convenio y formato}
 
 
-
-
-
-
-
-
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  \textbf{Núm} & \textbf{Formato} & \textbf{Tipo} & \textbf{Convenio} & \textbf{Binario} & \textbf{Decimal}\\
+  \hline
+  \multirow{4}{*}{A7} & \multirow{4}{*}{n = 8}& No Signado & - & 1010 0111 & 167\\\cline{3-6}
+  & & \multirow{3}{*}{Signado} & Signo y Magnitud & 1010 0111 & -39 \\\cline{4-6}
+  & &  & Complemento 1  & 0101 1000 & -88\\\cline{4-6}
+  & &  & Complemento 2  & 0101 1001 & -89\\\hline
+  \multirow{4}{*}{7B} & \multirow{4}{*}{n = 8}& No Signado & - & 0111 1011 & \multirow{4}{*}{123}\\\cline{3-5}
+  & & \multirow{3}{*}{Signado}& Signo y Magnitud &\multirow{3}{*}{-} & \\\cline{4-4}
+  & &  & Complemento 1  &  & \\\cline{4-4}
+  & &  & Complemento 2  &  & \\\hline
+  \multirow{4}{*}{FFC4} & \multirow{4}{*}{n = 16}& No Signado & - & 1111 1111 1100 0100 & 65476\\\cline{3-6}
+  & & \multirow{3}{*}{Signado} & Signo y Magnitud & 1111 1111 1100 0100 & 32704 \\\cline{4-6}
+  & &  & Complemento 1  & 0000 0000 0011 1011 & -59\\\cline{4-6}
+  & &  & Complemento 2  & 0000 0000 0011 1100 & -60\\\hline
+  \multirow{4}{*}{3D} & \multirow{4}{*}{n = 8}& No Signado & - & 0011 1101 & \multirow{3}{*}{61} \\\cline{3-5}
+  & & \multirow{3}{*}{Signado} & Signo y Magnitud & - &\\\cline{4-5}
+  & &  & Complemento 1  & - & \\\cline{4-5}
+  & &  & Complemento 2  & - & \\\hline
+  \multirow{4}{*}{D19} & \multirow{4}{*}{n = 12}& No Signado & - & 1101 0001 1001 & 3353\\\cline{3-6}
+  & & \multirow{3}{*}{Signado} & Signo y Magnitud & 1101 0001 1001 & -1305 \\\cline{4-6}
+  & &  & Complemento 1  & 0010 1110 0110 & -742\\\cline{4-6}
+  & &  & Complemento 2  & 0010 1110 0111 & -743\\\hline
+  \end{tabular}
+  \caption{Tabla de Hexadecimal a Decimal en distintos convenios signados y no signado}
+\end{table}
 
 
 
